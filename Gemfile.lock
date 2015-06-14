@@ -205,7 +205,6 @@ PLATFORMS
 DEPENDENCIES
   best_errors
   coderay
-  coffee-rails (~> 4.1.0)
   database_cleaner (~> 1.4.1)
   factory_girl_rails
   faker

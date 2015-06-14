@@ -1,6 +1,6 @@
 class ImdbController < ApplicationController
   def index
-  	@movies = Imdb.all
+  	@movies = Imdb.find_by_title(params)
   end
 
   def show

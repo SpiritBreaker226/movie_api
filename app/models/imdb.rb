@@ -2,7 +2,7 @@ class Imdb
 	include HTTParty
 	base_uri 'myapifilms.com'
 
-	def self.all(options = {})
+	def self.find_by_title(options = {})
 		get("/imdb", query: options)
 	end
 

@@ -1,0 +1,9 @@
+<h1>IMDB</h1>
+
+<%= form_tag imdb_index_path, method: :get do %>
+	<%= label_tag :title, "Search For Movie Titles" %>
+	<%= text_field_tag :title, "", placeholder: "ex. Back To The Future" %>
+	<%= submit_tag "Search" %>
+<% end %>
+
+<%= @movies %>

@@ -6,7 +6,7 @@ class Imdb
 		get("/imdb", query: options)
 	end
 
-	def self.find(id)
+	def self.find(imdb_id)
 		
 	end
 end

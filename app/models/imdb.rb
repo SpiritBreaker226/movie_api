@@ -13,4 +13,10 @@ class Imdb
 	def self.find(imdb_id)
 		options[:token] = @@my_api_films_token
 	end
+
+	def self.top_movies
+		options = { token: @@my_api_films_token }
+
+		get("/imdb/top", query: options)
+	end
 end

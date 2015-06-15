@@ -12,7 +12,8 @@ class Imdb
 
 	def self.find(imdb_id)
 		options = { 
-			token: @@my_api_films_token 
+			token: @@my_api_films_token,
+			idIMDB: imdb_id
 		}
 		
 		get("/imdb", query: options)
